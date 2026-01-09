@@ -2,6 +2,7 @@ import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import About from './components/About'
 import Game from './components/Game'
+import Villans from './components/Villans'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Hero />
       <About />
       <Game />
+      <Villans />
     </main>
   )
 }
