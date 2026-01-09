@@ -38,4 +38,8 @@ export const villans = [
         name: "Electro",
         image: "electro.jpeg",
     },
+    {
+        name: "Mysterio",
+        image: "mysterio.jpeg",
+    },
 ]
