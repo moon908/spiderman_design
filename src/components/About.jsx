@@ -50,8 +50,8 @@ const About = () => {
         gsap.from('#hanging-spiderman', {
             scrollTrigger: {
                 trigger: '#about-section',
-                start: 'top 60%',
-                end: 'top 10%',
+                start: 'top 90%',
+                end: 'top 50%',
                 scrub: 1.5,
             },
             y: -40,

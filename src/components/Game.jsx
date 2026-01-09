@@ -1,6 +1,70 @@
 import React from 'react'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/all'
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Game = () => {
+
+    useGSAP(() => {
+        gsap.from('#game-section', {
+            scrollTrigger: {
+                trigger: '#game-section',
+                start: 'top bottom',
+                end: 'top center',
+                scrub: true,
+            },
+            opacity: 0,
+            filter: 'blur(10px)',
+        });
+
+        gsap.from('#game-chars', {
+            scrollTrigger: {
+                trigger: '#game-section',
+                start: 'top 60%',
+                end: 'bottom top',
+                scrub: 1,
+            },
+            y: 50,
+            scale: 0.9,
+        });
+
+        gsap.from('#firstbar', {
+            scrollTrigger: {
+                trigger: '#firstbar',
+                start: 'top 90%',
+                end: 'top 60%',
+                scrub: true,
+            },
+            x: -100,
+            opacity: 0,
+        });
+
+        gsap.from('#secondbar', {
+            scrollTrigger: {
+                trigger: '#secondbar',
+                start: 'top 90%',
+                end: 'top 60%',
+                scrub: true,
+            },
+            x: 100,
+            opacity: 0,
+        });
+
+        gsap.from('.console-logo', {
+            scrollTrigger: {
+                trigger: '#game-section',
+                start: 'top 50%',
+                end: 'top 20%',
+                scrub: true,
+            },
+            y: 30,
+            opacity: 0,
+            stagger: 0.2,
+        });
+    });
+
     return (
         <section id="game-section" className='relative min-h-dvh bg-cover  bg-no-repeat overflow-hidden' style={{ backgroundImage: "url('/gamebg.png')" }}>
             <div className='flex justify-between items-center mt-15'>
@@ -31,16 +95,16 @@ const Game = () => {
                     </p>
                 </div>
             </div>
-            <div>
-                <img src='/six.png' alt='sixth-spiderma' className='absolute top-20 left-130 w-[700px] h-auto object-cover' />
+            <div id="game-chars">
+                <img src='/six.png' alt='sixth-spiderma' className='absolute top-10 left-130 w-[600px] h-auto object-cover' />
             </div>
             <div className='absolute top-35 left-60 flex flex-row gap-170 items-center'>
                 <div>
-                    <img src='/xbox.svg' alt='xbox-logo' className='w-[150px] h-auto' />
+                    <img src='/xbox.svg' alt='xbox-logo' className='w-[150px] h-auto console-logo' />
                 </div>
                 <div className='flex flex-row justify-center items-center gap-16'>
-                    <img src='/psicon.svg' alt='ps-5-logo' className='w-[150px] h-auto mb-20' />
-                    <img src='/windows.svg' alt='windows-logo' className='w-[150px] h-auto' />
+                    <img src='/psicon.svg' alt='ps-5-logo' className='w-[150px] h-auto mb-20 console-logo' />
+                    <img src='/windows.svg' alt='windows-logo' className='w-[150px] h-auto console-logo' />
                 </div>
             </div>
             <div id="firstbar" className='absolute top-120 left-5 p-4 pr-25 w-160 h-auto bg-gradient-to-r from-black to-transparent rounded-2xl z-10'>
@@ -56,7 +120,7 @@ const Game = () => {
                 </p>
                 <br />
                 <div className="pl-2">
-                    <button className=' text-white px-6 py-2 rounded-xl  border-2 border-red-500'>
+                    <button className=' text-white px-6 py-2 rounded-xl  border-2 border-red-500 hover:bg-red-500 transition-all'>
                         FULL STORY
                     </button>
                 </div>
@@ -71,7 +135,7 @@ const Game = () => {
                 </p>
                 <br />
                 <div className="pl-2">
-                    <button className=' text-white px-6 py-2 rounded-xl  border-2 border-red-500'>
+                    <button className=' text-white px-6 py-2 rounded-xl  border-2 border-red-500 hover:bg-red-500 transition-all'>
                         FULL STORY
                     </button>
                 </div>

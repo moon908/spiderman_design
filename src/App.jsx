@@ -16,7 +16,6 @@ const App = () => {
       <Villans />
       <Gallery />
       <Footer />
-
     </main>
   )
 }
