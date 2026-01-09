@@ -43,7 +43,7 @@ const Game = () => {
                     <img src='/windows.svg' alt='windows-logo' className='w-[150px] h-auto' />
                 </div>
             </div>
-            <div className='absolute top-150 left-5 p-4  pr-25  w-160 h-auto bg-gradient-to-r from-black to-transparent rounded-2xl'>
+            <div id="firstbar" className='absolute top-120 left-5 p-4 pr-25 w-160 h-auto bg-gradient-to-r from-black to-transparent rounded-2xl z-10'>
                 <h1 className='text-2xl font-semibold'>
                     Customized Spider-Man Suits
                 </h1>
@@ -61,15 +61,7 @@ const Game = () => {
                     </button>
                 </div>
             </div>
-            {/* <div>
-                <h1>
-                    All About New Edition
-                </h1>
-                <p>
-                    This isnt the Spider-Man you've met or ever seen before. In Marvel's Spider-Man Remastered, we meet an experienced Peter Parker who's more masterful at fighting big crime in New York City. At the same time, he's struggling to balance his chaotic personal life and career while the fate of Marvel's New York rests upon his shoulders.
-                </p>
-            </div> */}
-            <div className='absolute top-168 right-3 p-4 text-right pl-25  w-160 h-auto bg-gradient-to-l from-black to-transparent rounded-2xl'>
+            <div id="secondbar" className='absolute top-135 right-3 p-4 text-right pl-25  w-160 h-auto bg-gradient-to-l from-black to-transparent rounded-2xl'>
                 <h1 className='text-2xl font-semibold'>
                     All About New Edition
                 </h1>

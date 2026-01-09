@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Game from './components/Game'
 import Villans from './components/Villans'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <About />
       <Game />
       <Villans />
+      <Footer />
     </main>
   )
 }

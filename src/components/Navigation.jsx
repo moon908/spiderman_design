@@ -27,7 +27,7 @@ const Navigation = () => {
         <nav className='fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-sm bg-black/10'>
             <div className='flex items-center justify-between py-2 px-20 '>
                 <a href="#home" className='hover:scale-105 transition-transform'>
-                    <img src={logo} alt="logo" className="w-[62px] h-[62px] object-contain rounded-lg" />
+                    <img src={logo} alt="logo" className="w-[62px] h-[62px] object-contain rounded-l" />
                 </a>
                 <ul className='flex items-center gap-8'>
                     {navItems.map((item) => (
