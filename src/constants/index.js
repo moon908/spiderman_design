@@ -20,3 +20,22 @@ export const navItems = [
         href: "/Gallery",
     },
 ]
+
+export const villans = [
+    {
+        name: "Venom",
+        image: "venom.jpeg",
+    },
+    {
+        name: "Octopus",
+        image: "octopus.jpeg",
+    },
+    {
+        name: "Goblin",
+        image: "goblin.jpeg",
+    },
+    {
+        name: "Electro",
+        image: "electro.jpeg",
+    },
+]

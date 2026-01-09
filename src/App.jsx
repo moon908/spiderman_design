@@ -4,6 +4,7 @@ import About from './components/About'
 import Game from './components/Game'
 import Villans from './components/Villans'
 import Footer from './components/Footer'
+import Gallery from './components/Gallery'
 
 const App = () => {
   return (
@@ -13,7 +14,9 @@ const App = () => {
       <About />
       <Game />
       <Villans />
+      <Gallery />
       <Footer />
+
     </main>
   )
 }

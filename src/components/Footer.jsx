@@ -7,7 +7,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <section className='relative'>
+        <footer className='relative'>
             <div className='flex justify-between pr-20'>
                 <img src="fourth.png" alt="fourth" className='w-70 h-auto' />
                 <img src="five.png" alt="five" className='w-70 h-auto' />
@@ -23,7 +23,7 @@ const Footer = () => {
             <div className='absolute bottom-5 left-1/2 transform -translate-x-1/2 flex justify-center gap-12 mt-20 '>
                 <p>© {currentYear} Spider-Man. All rights reserved.</p>
             </div>
-        </section>
+        </footer>
     )
 }
 
